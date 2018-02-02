@@ -1,0 +1,30 @@
+<!--
+  Generated template for the Post page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>post</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+    <ion-item>
+      <ion-label floating>title</ion-label>
+      <ion-input type="text" [(ngModel)]= "post.title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>body</ion-label>
+      <ion-input type="text" [(ngModel)]="post.body"></ion-input>
+    </ion-item>
+    <button ion-button (click)="submit()">Submit</button>
+  </ion-list>
+
+</ion-content>
